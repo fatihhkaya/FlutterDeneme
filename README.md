@@ -1,6 +1,7 @@
-# ilkapp
+# LearnFlutterChallenge 
 
 A new Flutter project.
+Day 1
 
 ## Getting Started
 

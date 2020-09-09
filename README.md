@@ -1,7 +1,11 @@
 # LearnFlutterChallenge 
 
 A new Flutter project.
-Day 1
+Day 2
+
+Button kullanımı 
+Custom Font Ekleme
+
 
 ## Getting Started
 

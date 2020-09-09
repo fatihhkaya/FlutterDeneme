@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'views/anasayfa.dart';
+import 'widgets/shadow.dart';
+
  
 void main() => runApp(MyApp());
  
@@ -6,9 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Fatih App',
       home: Scaffold(
-        body: Center(child: Buttonn()),
+        body: Anasayfa(),
+       
       ),
     );
   }
@@ -41,14 +45,18 @@ class Buttonn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: FlatButton(
-        onPressed: () {},
-        child: Text("deneme"),
-        //color: Colors.black,
-        textColor: Colors.greenAccent,
+    return OutlineButton(
+            onPressed: () {},
+        child: ShadowWidget(
+                  child: Container(
+                    height: 100,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [Colors.green,Colors.blueAccent], stops: [0.2,0.7])
+          ),
+
+          ),
+        ),
         
-        )
     );
   }
 }

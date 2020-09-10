@@ -1,6 +1,6 @@
+import 'package:FlutterileDenemeler/views/uibase.dart';
+import 'package:FlutterileDenemeler/widgets/shadow.dart';
 import 'package:flutter/material.dart';
-import 'views/anasayfa.dart';
-import 'widgets/shadow.dart';
 
  
 void main() => runApp(MyApp());
@@ -10,8 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fatih App',
-      home: Scaffold(
-        body: Anasayfa(),
+      home: UIBaseView(
        
       ),
     );

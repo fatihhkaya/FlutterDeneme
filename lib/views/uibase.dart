@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:FlutterileDenemeler/widgets/list_item.dart';
 
 class UIBaseView extends StatefulWidget {
   UIBaseView({Key key}) : super(key: key);
@@ -11,6 +12,8 @@ class _UIBaseViewState extends State<UIBaseView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // resizeToAvoidBottomInset: true,
+     backgroundColor: Colors.green,
       appBar: AppBar(
         title: Text("data"),
         leading: Icon(Icons.menu),
@@ -47,10 +50,25 @@ class _UIBaseViewState extends State<UIBaseView> {
           )
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+       
             TextField(),
-            TextField(),
-            TextField(),
+            Card(
+              child: ListTile(
+                title: Text("deneme"),
+                trailing: Icon(Icons.smoke_free),
+              ),
+              
+            ),
+           CardListItem(icons: Icons.ac_unit,
+           title: "asdff",),
+            RaisedButton(
+              
+              onPressed: (){
+
+            }),
             RaisedButton(
               onPressed: (){
 

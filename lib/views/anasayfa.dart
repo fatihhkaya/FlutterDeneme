@@ -7,13 +7,12 @@ class Anasayfa extends StatefulWidget {
   _AnasayfaState createState() => _AnasayfaState();
 }
 
-class _AnasayfaState extends State<Anasayfa> {
+class _AnasayfaState extends State<Anasayfa> with AutomaticKeepAliveClientMixin {
   String _data = "";
   bool _isDark;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _isDark = false;
   }
@@ -27,6 +26,14 @@ class _AnasayfaState extends State<Anasayfa> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(_data),
+            Visibility(
+              visible: _isDark,
+              child: Text("dark$_isDark",
+              style: TextStyle(
+                color: Colors.black
+              ),
+              ),
+              ),
             Center(
               child: RaisedButton(
                 child: Icon(Icons.exit_to_app),
@@ -41,4 +48,7 @@ class _AnasayfaState extends State<Anasayfa> {
           ],
         ));
   }
+   @override
+
+  bool get wantKeepAlive => true;
 }

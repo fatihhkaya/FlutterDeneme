@@ -1,4 +1,5 @@
-import 'package:FlutterileDenemeler/views/uibase.dart';
+import 'package:FlutterileDenemeler/httpHello.dart';
+import 'package:FlutterileDenemeler/tabbar_view.dart';
 import 'package:FlutterileDenemeler/widgets/shadow.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fatih App',
-      home: UIBaseView(
+      home: TabbarView(
        
       ),
     );
